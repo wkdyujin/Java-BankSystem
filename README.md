@@ -3,13 +3,19 @@
 - 송금
 - 대출 상환
 
-## 2. 분담
+## 2. 프로젝트 설계
+### 1. DB 설계
+### 2. UML 클래스 다이어그램
+![image](https://github.com/wkdyujin/Java-BankSystem/assets/69359774/82752ece-a0b2-4500-89ce-0eb965e9500c)
+
+
+## 3. 분담
 - 광열: DB 연동, 계좌 비밀번호 검증, main
 - 유진: DB 설계, 로그인, main
 - 세은: 송금 전체 로직(Controller, Model)
 - 현규: 대출 전체 로직(Controller, Model)
 
-## 3. 트러블슈팅
+## 4. 트러블슈팅
 - 전체 트러블 슈팅
   
   |**문제**|**해결**|
@@ -22,7 +28,7 @@
   |(1) DwAccount 테이블에서 송금하는 사람과 받는 사람의 잔액을 동시에 조회해야 했기 때문에 Controller에서 DwAccount에 접근하는 로직이 복잡해짐| - 서브쿼리를 이용해서 입력받은 id로는 '나의 계좌 잔액'을 SELECT하고, 입력받은 수취인 계좌로는 '수취인의 계좌 잔액'을 SELECT함 <br/> - DTO에서 생성한 update 함수도 송금하는 사람(나)과 받는 사람(수취인)에 따라 다르게 생성|
 
 
-## 4. 리뷰: KPT(Keep, Problem, Try)
+## 5. 리뷰: KPT(Keep, Problem, Try)
 - Keep: 잘 했기 때문에 유지하고 싶은 것
 - Problem: 어려움을 느껴 개선하고 싶은 것
 - Try: 구체적으로 시도할 내용
